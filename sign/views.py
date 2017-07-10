@@ -128,6 +128,6 @@ def signup(request):
     else:
         data = OrderedDict()
         data["error"] = 1
-        data["message"] = u"用户名格式错误"
+        data["message"] = u"用户名格式错误或者密码格式错误"
         return JsonResponse(data)
 
